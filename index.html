@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Employee Attendance Record</h1>
+    <div class="main-form">
+        <form id="employeeForm">
+            <h4> NAME:</h4>  
+            <input id="name" type="text" placeholder="Enter your name"/>  
+            <h4> MONTH DAYS:</h4>  
+            <input id="month_days" type="number" placeholder="Enter number of month days"/>
+            <h4> AVAILABLE FOR DAYS:</h4>  
+            <input id="availale_for_days" type="number" placeholder="Enter number of available days"/>  
+            <h4> BAND SCORE</h4>  
+            <input id="band_score" type="text" placeholder="Your band score" disabled="true"/></br></br>
+            <button type="submit" id="submitbutton">Submit</button>
+        </form>
+    </div>
+
+    <table id="emptable" hidden='true'>
+        <tr>
+            <th id="empname">Name<span>(Click here to Sort by name)</span> </span></th>
+            <th>Month Days</th>
+            <th>Available For Days</th>
+            <th>Band Score</th>
+        </tr>
+    </table>
+
+    <div class="mycanvas" hidden="false">
+        <canvas id="myChart" width="1000" height="500" ></canvas>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

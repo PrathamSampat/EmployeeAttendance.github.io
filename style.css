@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+:root {
+    --background-color:#EEEEEE;
+    --blue: #476072;
+    --lightBlue: #548CA8;
+  }
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+body h1{
+    margin: 5px;
+}
+
+table{
+    margin-top: 20px;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+#empname span{
+    cursor: pointer;
+    font-size: 10px;
+}
+
+th{
+    border: 1px solid black;
+    height: 50px;
+    padding: 5px;
+    background-color: var(--blue);
+    color: white;
+}
+
+td{
+    border: 1px solid black;
+    text-align: center;
+    background-color: var(--lightBlue);
+    color: white;
+}
+
+input{
+    border: 3px solid var(--lightBlue);
+    background-color: var(--lightBlue);
+    color: white;
+    padding: 5px;
+    margin: 8px;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+#submitbutton{
+    margin-top: -8px;
+    color: white;
+    background-color: var(--lightBlue);
+    height: 30px;
+    width: 60px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    box-shadow: 2px 2px black;
+}
+
+.main-form{
+
+    border: 1px solid black;
+    width: 30%;
+}
+
+#employeeForm{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+canvas{
+    display: none;
+}
